@@ -1,0 +1,30 @@
+# everything the tools create under build/
+build/**
+!build/**/
+!build/**/README.md
+!build/**/*.tcl
+
+# vcs / dve
+simv*
+csrc/
+*.daidir/
+DVEfiles/
+ucli.key
+*.vpd
+*.vcd
+*.dump
+*.fsdb
+
+# design compiler
+alib-*/
+*.ddc
+*.svf
+command.log
+filenames.log
+work/
+WORK/
+
+# general
+*.log
+!results/**/*.log
+.DS_Store

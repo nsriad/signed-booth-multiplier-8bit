@@ -1,0 +1,36 @@
+$ iverilog -g2012 <booth sources> mul.sv mul_testbench.sv
+design: radix-4 booth
+a= -128, b= -128, product=  16384, expected=  16384
+a= -128, b=  127, product= -16256, expected= -16256
+a=  127, b=  127, product=  16129, expected=  16129
+a=  127, b= -128, product= -16256, expected= -16256
+a=   -1, b=   -1, product=      1, expected=      1
+a=   -1, b=    1, product=     -1, expected=     -1
+a=    1, b=   -1, product=     -1, expected=     -1
+a=    0, b= -128, product=      0, expected=      0
+a= -128, b=    0, product=      0, expected=      0
+a=   64, b=   -2, product=   -128, expected=   -128
+a=  -86, b=   85, product=  -7310, expected=  -7310
+a=   85, b=  -86, product=  -7310, expected=  -7310
+checked 12 corner cases and 65536 pairs, 0 errors
+All tests completed successfully
+
+
+$ iverilog -g2012 -DARRAY <array sources> mul.sv mul_testbench.sv
+design: array baseline
+a= -128, b= -128, product=  16384, expected=  16384
+a= -128, b=  127, product= -16256, expected= -16256
+a=  127, b=  127, product=  16129, expected=  16129
+a=  127, b= -128, product= -16256, expected= -16256
+a=   -1, b=   -1, product=      1, expected=      1
+a=   -1, b=    1, product=     -1, expected=     -1
+a=    1, b=   -1, product=     -1, expected=     -1
+a=    0, b= -128, product=      0, expected=      0
+a= -128, b=    0, product=      0, expected=      0
+a=   64, b=   -2, product=   -128, expected=   -128
+a=  -86, b=   85, product=  -7310, expected=  -7310
+a=   85, b=  -86, product=  -7310, expected=  -7310
+checked 12 corner cases and 65536 pairs, 0 errors
+All tests completed successfully
+
+
