@@ -5,7 +5,6 @@ the run is repeated, so this folder always holds the latest numbers.
 
 | file | what it holds |
 |---|---|
-| `iverilog_sim.log` | Icarus Verilog run of both designs, a quick check before VCS |
 | `booth_sim.log` | VCS run of the Booth design: 12 corner cases and 65,536 pairs, 0 errors |
 | `booth_dc.log` | Design Compiler log of `booth_run-dc.tcl` |
 | `booth_area.rpt` | cell area, total and per block |

@@ -98,9 +98,8 @@ Reports go to `build/dc-syn/reports/` and the netlist to
 
 ## Results
 
-Both designs pass the full test (12 corner cases and all 65,536 input pairs,
-0 errors). The Booth design also passes in VCS
-([`results/booth_sim.log`](results/booth_sim.log)).
+The Booth design passes the full VCS test: 12 corner cases and all 65,536
+input pairs, 0 errors ([`results/booth_sim.log`](results/booth_sim.log)).
 
 Synthesis with Design Compiler, SAED 90 nm `saed90nm_max` (worst case, 0.7 V),
 20 ns clock. Reports are in [`results/`](results/README.md).
