@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : area
+Design : mul
+Version: V-2023.12-SP5
+Date   : Mon Nov 23 16:32:29 2026
+****************************************
+
+Library(s) Used:
+
+    saed90nm_max (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+Number of ports:                          620
+Number of nets:                           937
+Number of cells:                          340
+Number of combinational cells:            284
+Number of sequential cells:                32
+Number of macros/black boxes:               0
+Number of buf/inv:                         33
+Number of references:                       3
+
+Combinational area:               3585.945633
+Buf/Inv area:                      182.476805
+Noncombinational area:            1034.035217
+Macro/Black Box area:                0.000000
+Net Interconnect area:             195.588769
+
+Total cell area:                  4619.980850
+Total area:                       4815.569619
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------
+mul                               4619.9809    100.0     0.0000  1034.0352  0.0000  mul
+core                              3585.9456     77.6    49.7664     0.0000  0.0000  booth_core
+core/cpa                           456.1920      9.9     0.0000     0.0000  0.0000  cpa16
+core/cpa/add_11                    456.1920      9.9   456.1920     0.0000  0.0000  cpa16_DW01_add_0
+core/enc0                           48.8448      1.1    48.8448     0.0000  0.0000  booth_encoder_0
+core/enc1                           58.0608      1.3    58.0608     0.0000  0.0000  booth_encoder_3
+core/enc2                           47.0016      1.0    47.0016     0.0000  0.0000  booth_encoder_2
+core/enc3                           47.0016      1.0    47.0016     0.0000  0.0000  booth_encoder_1
+core/gen0                          253.4400      5.5   253.4400     0.0000  0.0000  booth_ppgen_0
+core/gen1                          267.2640      5.8   267.2640     0.0000  0.0000  booth_ppgen_3
+core/gen2                          249.7536      5.4   249.7536     0.0000  0.0000  booth_ppgen_2
+core/gen3                          234.0864      5.1   234.0864     0.0000  0.0000  booth_ppgen_1
+core/tree                         1874.5344     40.6     0.0000     0.0000  0.0000  csa_tree_booth
+core/tree/l1                       639.5904     13.8   639.5904     0.0000  0.0000  csa32_0
+core/tree/l2                       617.4720     13.4   617.4720     0.0000  0.0000  csa32_2
+core/tree/l3                       617.4720     13.4   617.4720     0.0000  0.0000  csa32_1
+--------------------------------  ---------  -------  ---------  ---------  ------  ----------------
+Total                                                 3585.9456  1034.0352  0.0000
+
+1

@@ -99,13 +99,22 @@ Reports go to `build/dc-syn/reports/` and the netlist to
 ## Results
 
 Both designs pass the full test (12 corner cases and all 65,536 input pairs,
-0 errors). Synthesis numbers come from `results/`, see
-[`results/README.md`](results/README.md).
+0 errors). The Booth design also passes in VCS
+([`results/booth_sim.log`](results/booth_sim.log)).
 
-| design | area (um^2) | delay (ns) | power (uW) | PDP (pJ) |
-|---|---|---|---|---|
-| Booth | - | - | - | - |
-| array | - | - | - | - |
+Synthesis with Design Compiler, SAED 90 nm `saed90nm_max` (worst case, 0.7 V),
+20 ns clock. Reports are in [`results/`](results/README.md).
+
+| design | cell area (um^2) | cells | critical path (ns) | power (uW) | PDP (pJ) |
+|---|---|---|---|---|---|
+| Booth | 4620.0 | 316 | 19.63 | 29.86 | 0.586 |
+| array | - | - | - | - | - |
+
+These are synthesis estimates. Power uses the default switching activity
+in Design Compiler, and the script sets `set_max_area 0`, so the tool trades
+speed for area until the path just fits the 20 ns clock (slack 0.01 ns).
+The final comparison will use a tighter clock, the placed-and-routed
+netlist, and power from PrimeTime PX with simulated activity.
 
 Formality, post-synthesis simulation, IC Compiler, post-layout simulation, and
 PrimeTime are the next steps.

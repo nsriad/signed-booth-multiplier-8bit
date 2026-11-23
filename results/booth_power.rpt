@@ -1,0 +1,73 @@
+Loading db file '/apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : mul
+Version: V-2023.12-SP5
+Date   : Mon Nov 23 16:32:30 2026
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max (File: /apps/designlib/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_max.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+mul                    8000              saed90nm_max
+booth_core             8000              saed90nm_max
+booth_encoder_0        ForQA             saed90nm_max
+booth_ppgen_0          8000              saed90nm_max
+csa_tree_booth         8000              saed90nm_max
+cpa16                  8000              saed90nm_max
+csa32_0                8000              saed90nm_max
+booth_encoder_1        ForQA             saed90nm_max
+booth_encoder_2        ForQA             saed90nm_max
+booth_encoder_3        ForQA             saed90nm_max
+booth_ppgen_1          8000              saed90nm_max
+booth_ppgen_2          8000              saed90nm_max
+booth_ppgen_3          8000              saed90nm_max
+csa32_1                8000              saed90nm_max
+csa32_2                8000              saed90nm_max
+cpa16_DW01_add_0       8000              saed90nm_max
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+mul                                       2.435   11.716 1.57e+07   29.855 100.0
+  core (booth_core)                       2.286   11.639 1.28e+07   26.745  89.6
+    cpa (cpa16)                           0.136    1.516 1.49e+06    3.143  10.5
+      add_11 (cpa16_DW01_add_0)           0.136    1.516 1.49e+06    3.143  10.5
+    tree (csa_tree_booth)                 1.323    7.127 6.75e+06   15.199  50.9
+      l3 (csa32_1)                        0.572    2.411 2.23e+06    5.216  17.5
+      l2 (csa32_2)                        0.380    2.448 2.24e+06    5.065  17.0
+      l1 (csa32_0)                        0.371    2.267 2.28e+06    4.918  16.5
+    gen3 (booth_ppgen_1)                  0.120    0.612 7.90e+05    1.522   5.1
+    gen2 (booth_ppgen_2)                  0.146    0.648 8.97e+05    1.691   5.7
+    gen1 (booth_ppgen_3)                  0.146    0.677 9.96e+05    1.819   6.1
+    gen0 (booth_ppgen_0)                  0.131    0.576 8.78e+05    1.585   5.3
+    enc3 (booth_encoder_1)             5.99e-02 8.23e-02 1.53e+05    0.295   1.0
+    enc2 (booth_encoder_2)             4.98e-02 8.05e-02 1.53e+05    0.283   0.9
+    enc1 (booth_encoder_3)             5.31e-02 9.38e-02 2.12e+05    0.359   1.2
+    enc0 (booth_encoder_0)             4.50e-02 9.03e-02 2.10e+05    0.345   1.2
+1
