@@ -1,7 +1,7 @@
 `timescale 1ns/1ns
 
 // reduction tree for the booth design: 5 rows to 2 in three layers
-// 5 -> 4 -> 3 -> 2
+
 module csa_tree_booth
 (
 	input logic [15:0] r0, r1, r2, r3, r4, // partial product rows

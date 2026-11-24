@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-// final 16-bit carry-propagate adder
+// 16-bit carry-propagate adder
 // the carry-out is dropped because a signed 8x8 product always fits in 16 bits
 module cpa16
 (

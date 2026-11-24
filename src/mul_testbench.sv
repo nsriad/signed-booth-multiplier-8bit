@@ -1,6 +1,6 @@
 `timescale 1ps/1ps
 
-// self-checking testbench for the signed 8x8 multiplier
+// testbench for the signed 8x8 multiplier
 // part 1: 12 corner cases, printed and saved to mul.dump
 // part 2: all 65,536 input pairs, compared with a * b
 module mul_testbench();

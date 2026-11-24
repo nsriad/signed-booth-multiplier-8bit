@@ -2,7 +2,7 @@
 
 // one booth partial product row, 9 bits so that 2a fits
 // pp = ((one & a) | (two & 2a)) ^ neg
-// a negative digit is finished by the correction bit added in booth_core
+
 module booth_ppgen
 (
 	input logic [7:0] a, // multiplicand

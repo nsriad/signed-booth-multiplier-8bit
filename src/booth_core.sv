@@ -1,7 +1,6 @@
 `timescale 1ns/1ns
 
-// radix-4 booth multiplier, combinational
-// four booth rows plus one row of correction bits go into the csa tree
+// radix-4 booth multiplier
 module booth_core
 (
 	input logic [7:0] a, b, // multiplicand, multiplier
